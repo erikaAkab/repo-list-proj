@@ -5,6 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 import { environment } from '../environments/environment'
+import { Repository } from './models/repository.model';
 
 import * as VanillaToasts from 'vanillatoasts';
 
@@ -52,6 +53,15 @@ export class GitHubService {
         localStorage.removeItem('token');
         this.loginStatus.next(false);
         this.router.navigate(['/']);
+    }
+
+    getRepositoryList(): Observable<Array<Repository>> {
+        return this.http.get<Array<Repository>>(`/api.github.com/user/repos?sort=created`, {
+            headers: new HttpHeaders({
+                Accept: 'application/json',
+                Authorization: `Bearer ${this.token}`
+            })
+        });
     }
 
     private requestToken(code: string): Observable<any> {
