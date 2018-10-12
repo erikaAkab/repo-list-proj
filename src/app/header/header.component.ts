@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+    public userSigned: boolean;
+    public headerDescription: string;
 
-  constructor() { }
+    constructor() {}
 
   ngOnInit() {
+    }
+
+    getHeaderTitle() {
+        this.headerDescription = "Temporario"
+        return this.headerDescription;
   }
 
+    signOut() {
+    }
 }

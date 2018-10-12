@@ -1,3 +1,9 @@
-<p>
-  header works!
-</p>
+<div class="header">
+  <div class="header__title"> 
+    {{getHeaderTitle()}}
+  </div>
+
+  <button class="header__button" type="button" (click)="signOut()" *ngIf="userSigned">
+    <span class=header__text>Sair</span>
+  </button>
+</div>
