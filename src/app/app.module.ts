@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { GitHubLoginComponent } from './git-hub-login/git-hub-login.component';
+import { RepositoryListComponent } from './repository-list/repository-list.component';
 import { LoadingComponent } from './loading/loading.component';
 
 import { AuthGuard } from './auth-guard.guard';
@@ -19,6 +20,7 @@ import { GitHubService } from './github.service';
     HeaderComponent,
     FooterComponent,
     GitHubLoginComponent,
+    RepositoryListComponent,
     LoadingComponent
   ],
   imports: [
