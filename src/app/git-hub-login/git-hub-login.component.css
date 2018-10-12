@@ -1,11 +1,24 @@
 .box {
-    width: 700px;
+    width: 350px;
     height: 400px;
     margin: 30px auto;
     border: 2px solid #D0D1D2;
     border-radius: 3px;
 }
 
+.box__description--text {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    color: #000;
+}
+
+.box__login {
+    width: 350px;
+    height: 400px;
+}
+
+@media only screen and (min-width: 720px) {
 .box__description {
     width: 350px;
     height: 400px;
@@ -22,11 +35,12 @@
     top:150px;
     color: #fff;
 }
-
+    .box {
+        width: 700px;
+    }
 .box__login {
     float: right;
-    width: 350px;
-    height: 400px;
+    }
 }
 
 .box__login img {
