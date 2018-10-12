@@ -1,0 +1,10 @@
+<div class="repository" *ngFor="let repository of repositoriesToShow">
+    <a [href]="repository.html_url" target="_blank" class="repository__name">{{repository.name}}</a>
+    <div class="stats">
+        <img src="./../../assets/code_fork.png"> <span class="repository__info">{{repository.forks_count}}</span>
+        <img src="./../../assets/star.png"> <span class="repository__info">{{repository.stargazers_count}}</span>
+    </div>
+</div>
+<div *ngIf="repositories.length && !repositoriesToShow.length">
+    <h3>Nenhum repositório encontrado!</h3>
+</div>

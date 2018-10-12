@@ -1,0 +1,35 @@
+.repository {
+    margin: 15px auto;
+    padding: 15px;
+    width: 90%;
+    border: 1px solid #A8A8A8;
+    border-radius: 3px;
+}
+
+@media only screen and (min-width: 720px) {
+    .repository {
+        width: 600px;
+    }
+}
+
+.repository__name {
+    color: #0569C9;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.repository__description {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.repository__info {
+    position: relative;
+    top: -10px;
+    margin: 10px;
+}
+.stats {
+    padding-top:5px
+}
