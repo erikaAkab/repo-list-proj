@@ -9,7 +9,7 @@ export class GitHubLoginComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+  requestLogin() {}
 }
