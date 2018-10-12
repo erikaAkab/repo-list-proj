@@ -1,5 +1,5 @@
+
 .header {
-    width: 100%;
     height: 60px;
     background-color: #0569c9;
 }
@@ -8,7 +8,7 @@
     color: #fff;
     font-size: 2em;
     padding: 10px;
-    position: relative;
+    position: absolute;
     left: 40px;
 }
 
