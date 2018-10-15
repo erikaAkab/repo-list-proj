@@ -7,9 +7,6 @@ import { Repository } from '../models/repository.model';
 
 import * as VanillaToasts from 'vanillatoasts';
 
-import { Subject } from 'rxjs';
-import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
-
 @Component({
   selector: 'app-repository-list',
   templateUrl: './repository-list.component.html',
