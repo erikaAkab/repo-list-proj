@@ -37,12 +37,12 @@ $header-height: 60px;
     background-color: #fff;
     background-image: url("../../assets/logout_pressed.png");
     border: 1px solid $header-color;
-    .header__text {
+    .header__button--text {
         color:$header-color;
     };
 }
 
-.header__text {
+.header__button--text {
     font-size: 1.6em;
     position: relative;
     left: 10px;
