@@ -15,7 +15,7 @@ const routes: Routes = [
       redirectTo: 'git-hub-login',
       pathMatch: 'full'
   },
-  
+
   {
     path: 'loading',
     component: LoadingComponent,

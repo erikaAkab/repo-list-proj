@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 import { GitHubService } from '../github.service';
-import { environment } from './../../environments/environment'
+import { environment } from './../../environments/environment';
 
 @Component({
   selector: 'app-git-hub-login',

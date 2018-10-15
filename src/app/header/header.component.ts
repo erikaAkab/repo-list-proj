@@ -21,10 +21,10 @@ export class HeaderComponent implements OnInit {
     }
 
     getHeaderTitle() {
-        if(this.userSigned) {
-            this.headerDescription = "Lista de repositórios";
+        if (this.userSigned) {
+            this.headerDescription = 'Lista de repositórios';
         } else {
-            this.headerDescription = "Acesso a lista de repositórios";
+            this.headerDescription = 'Acesso a lista de repositórios';
         }
         return this.headerDescription;
     }

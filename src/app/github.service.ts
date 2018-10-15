@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
 import { Repository } from './models/repository.model';
 
 import * as VanillaToasts from 'vanillatoasts';
@@ -17,7 +17,7 @@ export class GitHubService {
     private token: string;
     private userSigned: boolean;
     public readonly loginStatus = new BehaviorSubject<boolean>(false);
-    
+
     constructor(private router: Router, private http: HttpClient) {
         this.loginStatus.subscribe((status: boolean) => (this.userSigned = status));
         this.token = sessionStorage.getItem('token');

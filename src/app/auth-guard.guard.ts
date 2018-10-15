@@ -27,7 +27,7 @@ export class AuthGuard implements CanActivate, CanLoad {
                 }),
             1000
         );
-  
+
         this.router.navigate(['git-hub-login']);
     } else {
         return status;

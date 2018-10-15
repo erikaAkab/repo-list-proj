@@ -29,7 +29,7 @@ export class LoadingComponent implements OnInit {
                     timeout: 3500,
                     callback: () => this.router.navigate(['/'])
                 });
-            }, 1000)
+            }, 1000);
         }
     });
   }
