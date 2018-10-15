@@ -18,7 +18,7 @@
     position: absolute;
     top: 20px;
     right: 60px;
-    background-image: url("./../../assets/logout.png");
+    background-image: url("../../assets/logout.png");
     background-repeat: no-repeat;
     background-position: 5px 4px;
     background-color: #0569c9;
@@ -28,11 +28,12 @@
 
 .header__button:hover {
     background-color: #107ce0;
+    cursor: pointer;
 }
 
 .header__button:active {
     background-color: #fff;
-    background-image: url("./../../assets/logout_pressed.png");
+    background-image: url("../../assets/logout_pressed.png");
     border: 1px solid #0569c9;
 }
 

@@ -23,7 +23,7 @@
     width: 350px;
     height: 400px;
     background-color: #0569C9;
-    background-image: url("./../../assets/github_logo_maior.png");
+    background-image: url("../../assets/github_logo_maior.png");
     background-position: center; 
     background-repeat: no-repeat;
     float: left;
@@ -61,7 +61,7 @@
     position: relative;
     top: 110px;
     right:30px;
-    background-image: url("./../../assets/github_logo_menor.png");
+    background-image: url("../../assets/github_logo_menor.png");
     background-repeat: no-repeat;
     background-position: 5px;
     background-color: #fff;
@@ -71,6 +71,7 @@
 
 .box__login__buton:hover {
     background-color: #E9E9E9;
+    cursor: pointer;
 }
 
 .box__login__text {
