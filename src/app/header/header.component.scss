@@ -1,15 +1,17 @@
+$header-color: #0569c9;
+$header-height: 60px;
 
 .header {
-    height: 60px;
-    background-color: #0569c9;
+    height: $header-height;
+    background-color: $header-color;
 }
 
 .header__title {
     color: #fff;
-    font-size: 2em;
-    padding: 10px;
+    font-size: 1.5em;
     position: absolute;
     left: 40px;
+    line-height: $header-height;
 }
 
 .header__button {
@@ -21,20 +23,23 @@
     background-image: url("../../assets/logout.png");
     background-repeat: no-repeat;
     background-position: 5px 4px;
-    background-color: #0569c9;
+    background-color: $header-color;
     border: 1px solid #fff;
-    border-radius: 3px;
+    border-radius: 3px; 
 }
 
 .header__button:hover {
     background-color: #107ce0;
     cursor: pointer;
-}
+};
 
 .header__button:active {
     background-color: #fff;
     background-image: url("../../assets/logout_pressed.png");
-    border: 1px solid #0569c9;
+    border: 1px solid $header-color;
+    .header__text {
+        color:$header-color;
+    };
 }
 
 .header__text {
@@ -42,8 +47,4 @@
     position: relative;
     left: 10px;
     color:#fff;
-}
-
-.header__button:active .header__text {
-    color:#0569c9;
 }

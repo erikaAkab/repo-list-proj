@@ -8,7 +8,7 @@ import { environment } from './../../environments/environment'
 @Component({
   selector: 'app-git-hub-login',
   templateUrl: './git-hub-login.component.html',
-  styleUrls: ['./git-hub-login.component.css']
+  styleUrls: ['./git-hub-login.component.scss']
 })
 
 export class GitHubLoginComponent implements OnInit {

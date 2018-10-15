@@ -1,0 +1,88 @@
+$border-size: 2px solid;
+$small-box-width: 350px;
+$box-height: 400px;
+$border-radius-size: 3px;
+
+
+.box {
+    width: $small-box-width;
+    height: $box-height;
+    margin: 30px auto;
+    border: $border-size #d0d1d2;
+    border-radius: $border-radius-size;
+
+    .box__description--text {
+        position: relative;
+        top: 40px;
+        text-align: center;
+        color: #000;
+    }
+    
+    .box__login {
+        width: $small-box-width;
+        height: $box-height;
+        img {
+            position: relative;
+            top:70px;
+            left: 120px;
+        };
+        a {
+            position: relative;
+            top:120px;
+            left: 135px;
+        }
+    }
+    
+    .box__login__buton {
+        width: 200px;
+        height: 45px;
+        position: relative;
+        top: 110px;
+        right:30px;
+        background-image: url("../../assets/github_logo_menor.png");
+        background-repeat: no-repeat;
+        background-position: 5px;
+        background-color: #fff;
+        border: $border-size #009AFF;
+        border-radius: $border-radius-size;
+    }
+    
+    .box__login__buton:hover {
+        background-color: #E9E9E9;
+        cursor: pointer;
+    }
+
+    .box__login__text {
+        font-size: 1.2em;
+        position: relative;
+        left: 20px;
+        font-weight: bold;
+        color:#009AFF;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .box {
+        width: 700px;
+        .box__description {
+            width: $small-box-width;
+            height: $box-height;
+            background-color: #0569C9;
+            background-image: url("../../assets/github_logo_maior.png");
+            background-position: center; 
+            background-repeat: no-repeat;
+            float: left;
+        }
+        
+        .box__description--text {
+            padding: 20px;
+            position: relative;
+            top:150px;
+            color: #fff;
+        }
+
+        .box__login {
+            float: right;
+        }
+    }
+}
