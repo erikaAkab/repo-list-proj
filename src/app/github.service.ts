@@ -20,7 +20,7 @@ export class GitHubService {
     
     constructor(private router: Router, private http: HttpClient) {
         this.loginStatus.subscribe((status: boolean) => (this.userSigned = status));
-        this.token = localStorage.getItem('token');
+        this.token = sessionStorage.getItem('token');
         this.loginStatus.next(this.token ? true : false);
     }
 
@@ -28,7 +28,7 @@ export class GitHubService {
         this.requestToken(code).subscribe(
             (data) => {
                 this.token = data.access_token;
-                localStorage.setItem('token', this.token);
+                sessionStorage.setItem('token', this.token);
                 this.loginStatus.next(true);
                 this.router.navigate(['repository-list']);
             },
@@ -50,7 +50,7 @@ export class GitHubService {
     }
 
     signOut() {
-        localStorage.removeItem('token');
+        sessionStorage.removeItem('token');
         this.loginStatus.next(false);
         this.router.navigate(['/']);
     }
