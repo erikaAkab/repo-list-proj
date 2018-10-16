@@ -11,15 +11,15 @@ describe('GitHubLoginComponent', () => {
   let component: GitHubLoginComponent;
   let fixture: ComponentFixture<GitHubLoginComponent>;
 
-  const title = {
+  const mockedTitle = {
     setTitle: () => ({})
   };
 
-  const router = {
+  const mockedRouter = {
     navigate: () => ({})
   };
 
-  const githubService = {
+  const mockedGitHubService = {
     getSignedStatus: () => ({})
   };
 
@@ -28,9 +28,9 @@ describe('GitHubLoginComponent', () => {
       declarations: [ GitHubLoginComponent ],
       schemas: [NO_ERRORS_SCHEMA],
       providers: [
-        { provide: GitHubService, useValue: githubService },
-        { provide: Router, useValue: router },
-        { provide: Title, useValue: title }
+        { provide: GitHubService, useValue: mockedGitHubService },
+        { provide: Router, useValue: mockedRouter },
+        { provide: Title, useValue: mockedTitle }
       ]
     })
     .compileComponents();
@@ -48,9 +48,9 @@ describe('GitHubLoginComponent', () => {
 
     spyOn(title, 'setTitle');
     spyOn(githubService, 'getSignedStatus');
-    
+
     component.ngOnInit();
-    
+
     expect(title.setTitle).toHaveBeenCalled();
     expect(githubService.getSignedStatus).toHaveBeenCalled();
   });

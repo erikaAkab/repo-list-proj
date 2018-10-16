@@ -37,8 +37,8 @@ describe('HeaderComponent', () => {
   });
 
   it('should have a title', () => {
-    let title = component.getHeaderTitle();
-    
+    const title = component.getHeaderTitle();
+
     expect(title).not.toBeNull();
   });
 });
