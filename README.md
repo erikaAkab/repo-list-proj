@@ -9,6 +9,11 @@ Aplicação desenvolvida em angular 6 para listagem de repositórios de uma cont
 Para rodar a aplicação localmente deve-se ter instalado Node.js e npm que pode ser obtido no site:
 https://www.npmjs.com/get-npm
 
+Após a instalação deve se instalar a interface de linha de comando do Angular utilizando:
+```sh
+$ npm install -g @angular/cli
+```
+
 Após a instalação, para rodar a aplicação localmente execute o comando na pasta do projeto:
 ```sh
 $ ng serve -o
