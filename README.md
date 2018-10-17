@@ -6,7 +6,15 @@ Aplicação desenvolvida em angular 6 para listagem de repositórios de uma cont
   - Firefox Quantum 62.0.3 (64-bit)
   
 #### Rodando localmente a aplicação:
-Para rodar a aplicação localmente use o comando:
+Deve-se ter instalado Node.js e npm que pode ser obtido no site:
+https://www.npmjs.com/get-npm
+
+Após a instalação deve se instalar a interface de linha de comando do Angular utilizando:
+```sh
+$ npm install -g @angular/cli
+```
+
+Para rodar a aplicação localmente execute o comando na pasta do projeto:
 ```sh
 $ ng serve -o
 ```
@@ -31,6 +39,7 @@ $ ng test
 ```
 
 ### Gerando build de produção otimizado:
+A build será gerada e colocada na pasta /dist localizada na raíz do projeto.
 ```sh
 $ npm run build
 ```
