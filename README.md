@@ -1,7 +1,11 @@
 # repo-list-proj
 Aplicação desenvolvida em angular 6 para listagem de repositórios de uma conta do github
 
-#### Rodando localmente a aplicação
+### Testado nos navegadores:
+  - Chrome Versão 69.0.3497.100 (Versão oficial) 64 bits
+  - Firefox Quantum 62.0.3 (64-bit)
+  
+#### Rodando localmente a aplicação:
 Para rodar a aplicação localmente use o comando:
 ```sh
 $ ng serve -o
@@ -16,4 +20,17 @@ $ npm install --save-dev @angular-devkit/build-angular
 Módulo para exibição de uma notificação na tela:
 ```sh
 $ npm install vanilla-toast
+```
+### Rodando lint:
+```sh
+$ ng lint
+```
+### Rodando testes unitários:
+```sh
+$ ng test
+```
+
+### Gerando build de produção otimizado:
+```sh
+$ npm run build
 ```
